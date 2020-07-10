@@ -11,7 +11,7 @@ Recipe app api source code
 :bug: when fixing a bug
 :fire: when removing code or files
 :green_heart: when fixing the CI build
-:white_check_mark: when adding tests
+:white_check_mark: when adding test
 :lock: when dealing with security
 :arrow_up: when upgrading dependencies
 :arrow_down: when downgrading dependencies
