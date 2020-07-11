@@ -10,7 +10,9 @@ from recipe import serializers
 # using django rest framework feature
 # only using List model function by using generic model and List Mixin
 
-class TagViewSet(viewsets.GenericViewSet, mixins.ListModelMixin):
+class TagViewSet(viewsets.GenericViewSet,
+                 mixins.ListModelMixin,
+                 mixins.CreateModelMixin):
     """Manage tags in the database"""
     authentication_classes = (TokenAuthentication,)
     permission_classes = (IsAuthenticated,)
@@ -20,3 +22,10 @@ class TagViewSet(viewsets.GenericViewSet, mixins.ListModelMixin):
     def get_queryset(self):
         """Return objects for the current authenticated user only"""
         return self.queryset.filter(user=self.request.user).order_by('-name')
+
+    # overriding existing method, fn that allows us to hook to create object
+    # and validated serializer will be passed as a serializer argument and then
+    # we modify
+    def perform_create(self, serializer):
+        """Create a new tag"""
+        serializer.save(user=self.request.user)
