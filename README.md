@@ -1,18 +1,50 @@
 # recipe-app-api
 Recipe app api source code
 
-:rocket: when adding new features
-:art: when improving the format/structure of the code
-:racehorse: when improving performance
-:non-potable_water: when plugging memory leaks
-:memo: when writing docs
-:penguin: when fixing something on Linux
-:checkered_flag: when fixing something on Windows
-:bug: when fixing a bug
-:fire: when removing code or files
-:green_heart: when fixing the CI build
-:white_check_mark: when adding test
-:lock: when dealing with security
-:arrow_up: when upgrading dependencies
-:arrow_down: when downgrading dependencies
-:shirt: when removing linter warnings
+- Limit the first line to 79 characters or less
+- Consider starting the commit message with an applicable emoji:
+    - :art: `:art:` when improving the format/structure of the code
+    - :fire: `:fire:` when removing code or files
+    - :bug: `:bug:` when fixing a bug
+    - :ambulance: `:critical:` critical hotfix
+    - :sparkles: `:sparkles:` introducing new features
+    - :racehorse: `:racehorse:` when improving performance
+    - :rocket: `:rocket:` deploying stuff
+    - :tada: `:tada:` beginning a project
+    - :white_check_mark: `:white_check_mark:` when adding / updating tests
+    - :lock: `:lock:` when dealing with security
+    - :bookmark: `:bookmark:` releasing/version tags
+    - :construction: `:construction:` work in progress
+    - :green_heart: `:green_heart:` when fixing the CI build
+    - :arrow_up: `:arrow_up:` when upgrading dependencies
+    - :arrow_down: `:arrow_down:` when downgrading dependencies
+    - :pushpin: `:pushpin:` pinning dependencies to specific versions
+    - :construction_worker: `:construction_worker:` adding or updating CI build system
+    - :recycle: `:recycle:` Refactoring code.
+    - :heavy_plus_sign: `:heavy_plus_sign:` adding a dependency
+    - :heavy_minus_sign: `:heavy_minus_sign:` removing a dependency
+    - :hammer: `:hammer:` Adding/updating build scripts
+    - :wrench: `:wrench:` Adding or updating configuration files.
+    - :pencil: `:pencil:` Writing docs.
+    - :pencil2: `:pencil2:` fixing typos
+    - :truck: `:truck:` moving or renaming files
+    - :boom: `:boom:` introducing breaking changes
+    - :bulb: `:bulb:` Adding or updating comments in source code.
+    - :card_file_box: `:card_file_box:` Performing database related changes.
+    - :loud_sound: `:loud_sound:` Adding or updating logs.
+    - :mute: `:mute:` Removing logs.
+    - :busts_in_silhouette: `:busts_in_silhouette:` Adding or updating contributor(s).
+    - :children_crossing: `:children_crossing:` Improving user experience / usability.
+    - :building_construction: `:building_construction:` Making architectural changes.
+    - :clown_face: `:clown_face:` Mocking things.
+    - :see_no_evil: `:see_no_evil:` Adding or updating a .gitignore file
+    - :alembic: `:alembic:` Experimenting new things
+    - :goal_net: `:goal_net:` Catching errors
+    - :wastebasket: `:wastebasket:` Deprecating code that needs to be cleaned up.
+    - :dizzy: `:dizzy:` Adding or updating animations and transitions
+    - :iphone: `:iphone:` Working on responsive design.
+    - :non-potable_water: `:non-potable_water:` when plugging memory leaks
+    - :memo: `:memo:` when writing docs
+    - :penguin: `:penguin:` when fixing something on Linux
+    - :checkered_flag: `:checkered_flag:` when fixing something on Windows
+    - :shirt: `:shirt:` when removing linter warnings
