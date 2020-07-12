@@ -63,3 +63,25 @@ class Ingredient(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Recipe(models.Model):
+    """Recipe object to be used in a recipe"""
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+    )
+    title = models.CharField(max_length=255)
+    time_minutes = models.IntegerField()
+    price = models.DecimalField(max_digits=5, decimal_places=2)
+    # optional fields
+    link = models.CharField(max_length=255, blank=True)
+
+    # you can skip 'Ingredient' and pass Ingredient class directly
+    # but that then means the classes must be in correct order
+    # thus use Djangos feature of passing class name in a string
+    ingredients = models.ManyToManyField('Ingredient')
+    tags = models.ManyToManyField('Tag')
+
+    def __str__(self):
+        return self.title
